@@ -1,0 +1,243 @@
+// import {Link, NavLink} from "react-router-dom";
+// import Navbar from './Navbar';
+// import { useState } from "react";
+// import { MdClose, MdMenu } from "react-icons/md";
+// import { FaOpencart} from "react-icons/fa";
+// //imported images
+// import logo from "../ASSETS/admin/assets/logo.svg"
+// import logout from "../ASSETS/frontend/assets/logout.svg"
+// import user from "../ASSETS/frontend/assets/user.svg"
+
+// const Header = () => {
+
+//     const[menuOpened, setMenuOpened] = useState(false);
+//     const toggleMenu = () => setMenuOpened(!menuOpened);
+    
+//   return (
+//     <header className="fixed top-0 left-0 m-auto max_padd_container w-full bg-transparent ring-1 ring-slate-900/5 z-10">
+//         <div className="px-4 flexBetween py-3 max-xs:px-2">
+//             {/*logo*/}
+//             <div>
+//             <Link><img src={logo} alt="" height={66} width={88}/></Link>
+//             </div>
+//             {/*Navbar Desktop*/}
+//             <Navbar containerStyles={"hidden md:flex gap-x-5 xl:gap-x-10 medium-15"}/>
+//             {/*Navbar Mobile*/}
+//             <Navbar containerStyles={`${menuOpened ? "md:hidden flex item-start flex-col gap-y-12 fixed top-20 right-8 p-12 bg-white rounded-3xl shadow-md w-64 medium-16 ring-1 ring-slate-900/5 transition-all duration-300 " : "flex item-start flex-col gap-y-12 fixed top-20 p-12 bg-white rounded-3xl shadow-md w-64 medium-16 ring-1 ring-slate-900/5 transition-all duration-300 -right-[100%]"}`} />
+//             {/*Buttons*/}
+//             <div className="flexBetween sm:gap-x-2 bold-16">
+//                 {!menuOpened? (
+//                 <MdMenu className="md-hidden cursor-pointer hover:text-secondary mr-2 p-1 ring-1 ring-slate-900/30 h-8 w-8 rounded-full" onClick={toggleMenu}/>
+//                 ) : (
+//                 <MdClose className="md-hidden cursor-pointer hover:text-secondary mr-2 p-1 ring-1 ring-slate-900/30 h-8 w-8 rounded-full " onClick={toggleMenu}/>)}
+//                 <div className="flexBetween sm:gap-x-6">
+//                     <NavLink to={"cart-page"} className={"flex"}><FaOpencart 
+//                     className="p-1 h-8 w-8 ring-slate-900/30 ring-1 rounded-full" /><span className="relative flexCenter w-5 h-5 rounded-full bg-secondary text-white medium-14 -top-2">0</span></NavLink>
+//                     {/* <NavLink to={'logout'} className={"btn_secondary_rounded flexCenter gap-x-2 medium-16"}><img src={logout} alt="logoutIcon" height={19} width={19} />Logout</NavLink> */}
+//                     <NavLink to={'login'} className={"btn_secondary_rounded flexCenter gap-x-2 medium-16"}><img src={user} alt="userIcon" height={19} width={19}/>Login</NavLink>
+//                 </div>
+//             </div>
+            
+//         </div> 
+//     </header>
+//   )
+// }
+
+// export default Header
+
+
+
+// // popular
+// import p1_img from './product_1.png'
+// import p2_img from './product_2.png'
+// import p3_img from './product_3.png'
+// import p4_img from './product_4.png'
+
+// // latest 
+// import p5_img from "./product_12.png";
+// import p6_img from "./product_35.png";
+// import p7_img from "./product_14.png";
+// import p8_img from "./product_8.png";
+// import p9_img from "./product_15.png";
+// import p10_img from "./product_2.png";
+// import p11_img from "./product_17.png";
+// import p12_img from "./product_28.png";
+
+// // Footer
+// import facebook from './facebook.svg'
+// import instagram from './instagram.svg'
+// import twitter from './twitter.svg'
+// import youtube from './youtube.svg'
+// import linkedin from './linkedin.svg'
+
+
+// const POPULAR = [
+//   {
+//     id:1,
+//     name:"Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
+//     image:p1_img,
+//     new_price:50.00,
+//     old_price:80.50,
+//   },
+//   {id:2,
+//     name:"Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
+//     image:p2_img,
+//     new_price:85.00,
+//     old_price:120.50,
+//   },
+//   {id:3,
+//     name:"Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
+//     image:p3_img,
+//     new_price:60.00,
+//     old_price:100.50,
+//   },
+//   {id:4,
+//     name:"Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
+//     image:p4_img,
+//     new_price:100.00,
+//     old_price:150.00,
+//   },
+// ];
+
+// export default POPULAR;
+
+// const LATEST = [
+//   {
+//     id: 5,
+//     name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
+//     image: p5_img,
+//     new_price: 50.0,
+//     old_price: 80.5,
+//   },
+//   {
+//     id: 6,
+//     name: "Boys Orange Colourblocked Hooded Sweatshirt",
+//     image: p6_img,
+//     new_price: 85.0,
+//     old_price: 120.5,
+//   },
+//   {
+//     id: 7,
+//     name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
+//     image: p7_img,
+//     new_price: 60.0,
+//     old_price: 100.5,
+//   },
+//   {
+//     id: 8,
+//     name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
+//     image: p8_img,
+//     new_price: 100.0,
+//     old_price: 150.0,
+//   },
+//   {
+//     id: 9,
+//     name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
+//     image: p9_img,
+//     new_price: 50.0,
+//     old_price: 80.5,
+//   },
+//   {
+//     id: 10,
+//     name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
+//     image: p10_img,
+//     new_price: 85.0,
+//     old_price: 120.5,
+//   },
+//   {
+//     id: 11,
+//     name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
+//     image: p11_img,
+//     new_price: 60.0,
+//     old_price: 100.5,
+//   },
+//   {
+//     id: 12,
+//     name: "Boys Orange Colourblocked Hooded Sweatshirt",
+//     image: p12_img,
+//     new_price: 100.0,
+//     old_price: 150.0,
+//   },
+// ];
+
+// export default LATEST;
+
+// // FOOTER SECTION
+// const FOOTER_LINKS = [
+//   {
+//     title: "Learn More",
+//     links: [
+//       "About Us",
+//       "Categories",
+//       "Exchange Policy",
+//       "Order Now",
+//       "FAQ",
+//       "Privacy Policy",
+//     ],
+//   },
+//   {
+//     title: "Our Community",
+//     links: [
+//       "Terms and Conditions",
+//       "Special Offers",
+//       "Customer Reviews",
+//     ],
+//   },
+// ];
+
+// export default FOOTER_LINKS;
+
+// const FOOTER_CONTACT_INFO = {
+//   title: "Contact Us",
+//   links: [
+//     { label: "Contact Number", value: "123-456-7890" },
+//     { label: "Email Address", value: "info@shoppee.com" },
+//   ],
+// };
+
+// export const SOCIALS = {
+//   title: "Social",
+//   links: [
+//     facebook,
+//     instagram,
+//     twitter,
+//     youtube,
+//     linkedin,
+//   ],
+// };
+
+// export default SOCIALS;
+
+
+
+
+
+// import { createContext, useState } from "react";
+// import all_products from "../ASSETS/frontend/assets/all_products"
+
+
+// export const ShopContext = createContext(null);
+
+
+// const getDefaultCart = ()=> {
+//     let cart = {};
+//     for (let index = 0; index < all_products.length; index++) {
+//         cart[index] = 0;            
+//     }
+//     return cart;
+// }
+
+// const ShopContextProvider = (props) => {
+
+//     const contextValue = {all_products, cartItems}
+//     const [cartItems,setCartItems] = useState(getDefaultCart());
+
+//     console.log(cartItems); 
+//     return(
+//         <ShopContext.Provider value={contextValue}>
+//             {props.children}
+//         </ShopContext.Provider>
+//     )
+// }
+
+// export default ShopContextProvider; 
